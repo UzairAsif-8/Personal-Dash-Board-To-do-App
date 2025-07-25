@@ -18,7 +18,7 @@ This project was created as my first complete front-end build to practice DOM ma
 ## Live Demo
 
 The project is deployed on **Vercel**.  
-[Click here to view the live site](#) <!-- Replace # with your actual Vercel deployment link -->
+[Click here to view the live site](https://personal-dash-board-to-do-app.vercel.app/) 
 
 ## Installation & Usage
 
