@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal DashBoard</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <img
+      class="fixed inset-0 bg-cover z-[-1]"
+      src="BackGroundDashboard.jpg"
+      alt="Background Image"
+    />
+    <header>
+      <nav
+        class="flex fixed w-[90vw] ml-[5%] mt-[15px] bg-white/10 backdrop-blur-md border-[1px] border-white/20 rounded-4xl border-white/10 items-center justify-between p-5"
+      >
+        <h1 class="text-white text-[30px] font-semibold pl-[8px]">
+          Your Personal Dashboard
+        </h1>
+        <a href="https://github.com/UzairAsif-8" target="_blank">
+          <i
+            class="fa-brands fa-github text-[35px] text-white pl-[35vw] mt-[8px]"
+          ></i>
+        </a>
+        <h1
+          class="text-white text-[15px] font-[sans-serif] pl-[8px] mt-[8px] ml-[0px]"
+        >
+          Your Day, Your Space, Your Control
+        </h1>
+      </nav>
+    </header>
+    <main class="flex flex-col items-center justify-center h-[560px]">
+      <h1
+        class="welcome text-white font-[impact] font-normal text-[100px] animate"
+      >
+        WELCOME
+      </h1>
+      <p
+        class="text-white font-[sans-serif] text-center font-light pl-[30%] pr-[30%]"
+      >
+        Welcome to your personal hub for daily productivity. Manage your tasks,
+        track real-time weather, and stay inspired. Your day, your tools — all
+        in one clean and powerful dashboard. Start your journey to a more
+        organized you.
+      </p>
+      <input
+        class="enteredName bg-white/10 h-[50px] w-[350px] rounded-2xl border-[1px] border-white/20 backdrop-blur-md placeholder-gray-200 focus:outline-none pl-[15px] text-white mt-[20px]"
+        type="text"
+        placeholder="Enter Your Name"
+      />
+
+      <button
+        class="enteredBtn text-blue-900 font-[sans-serif] font-semibold h-[40px] w-[200px] bg-white rounded-2xl text-[14px] hover:shadow-md mt-[20px] hover:shadow-pink-500/50 cursor-pointer"
+      >
+        LET'S GET STARTED
+      </button>
+    </main>
+    <footer class="text-white text-[15px] text-center font-light">
+      Made with <i class="fa-solid fa-heart"></i> By Muhammad Uzair Asif
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

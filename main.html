@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main Page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <img
+      class="fixed inset-0 bg-cover z-[-1]"
+      src="BackGroundDashboard.jpg"
+      alt="Background Image"
+    />
+    <header>
+      <nav
+        class="flex fixed w-[40vw] top-[15px] ml-[30%] h-[60px] bg-white/10 backdrop-blur-md border-[1px] border-white/20 rounded-4xl border-white/10 items-center justify-center p-5"
+      >
+        <h1 class="finalName text-white text-[30px] font-[Impact] font-light">
+          Welcome, Uzair Asif
+        </h1>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="text-white text-center pt-[90px]">
+        Now you can add and manage your daily tasks to stay organized and
+        productive
+      </h1>
+      <div class="container flex w-[95%] h-[448px] ml-[2.5%]">
+        <div
+          class="weather w-[20%] h-[400px] border-[1px] border-white/20 shadow-white-500 ml-[2%] mt-[1%] bg-white/10 rounded-2xl backdrop-blur-md"
+        >
+          <div class="logo w-[120px] ml-[25%]">
+            <img src="WeatherLogoPng.png" alt="WeatherLogo" />
+          </div>
+          <div class="location text-white text-center mt-[7px] font-bold">
+            <i class="fa-solid fa-location-dot"></i> Lahore,PK
+          </div>
+          <div
+            class="temperature text-white text-center font-[impact] text-[60px]"
+          >
+            27'C
+          </div>
+          <div class="feelsLike text-white text-center font-semibold mb-[10px]">
+            Feels Like: 32'C
+          </div>
+          <div class="day text-white text-center">
+            <i class="fa-solid fa-sun mb-[5px]"></i> Day
+          </div>
+          <div class="windSpeed text-white text-center mb-[10px]">
+            <i class="fa-solid fa-fan"></i> 899393191390 mph
+          </div>
+          <div
+            class="direction flex justify-around text-white text-center mb-[10px]"
+          >
+            <div class="latitude text-white text-center mr-[5px]">Lat: 12'</div>
+            <div class="longitude text-white text-center">Long: 15'</div>
+          </div>
+        </div>
+        <!-- To do Section -->
+        <div
+          class="todo w-[50%] h-[400px] border-[1px] border-white/30 ml-[3%] mt-[1%] rounded-2xl bg-white/1 backdrop-blur-md"
+        >
+          <div
+            class="status flex text-white mt-[10px] ml-[2.5%] border-1 border-white/30 backdrop-blur-md rounded-2xl w-[95%] h-[65px] justify-center items-center"
+          >
+            <div class="statusCheck">
+              <h1 class="font-bold text-[20px]">Task Status:</h1>
+            </div>
+            <div
+              class="border-white/10 backdrop-blur-md rounded-2xl border-[1px] w-[140px] h-[35px] text-center pt-[2px] ml-[50px] shadow-[0_0_15px_2px_rgba(236,72,153,0.4)]"
+            >
+              <h1 class="completed">
+                Completed: 0
+                <i class="fa-solid fa-circle-check text-green-500"></i>
+              </h1>
+            </div>
+            <div
+              class="border-white border-[1px] border-white/10 backdrop-blur-md rounded-2xl w-[140px] h-[35px] text-center pt-[2px] ml-[50px] shadow-[0_0_15px_2px_rgba(236,72,153,0.4)]"
+            >
+              <h1 class="pending">
+                Pending: 0
+                <i class="fa-solid fa-hourglass-half text-red-500"></i>
+              </h1>
+            </div>
+          </div>
+          <div class="addTask text-white">
+            <input
+              type="text"
+              placeholder="Enter Task Title"
+              class="inputTask placeholder-gray-400 bg-white/10 h-[40px] w-[220px] rounded-2xl border-[1px] border-white/20 backdrop-blur-md placeholder-gray-200 focus:outline-none pl-[15px] text-white mt-[10px] ml-[74px]"
+            />
+            <button
+              class="inputTaskBtn text-blue-900 font-[sans-serif] font-semibold h-[40px] w-[100px] bg-white rounded-2xl text-[14px] hover:shadow-md mt-[10px] hover:shadow-pink-500/50 cursor-pointer ml-[20px]"
+            >
+              Add Task <i class="fa-solid fa-circle-check text-green-500"></i>
+            </button>
+          </div>
+          <div class="taskLists1 flex text-white invisible">
+            <div
+              class="task1 bg-white/10 h-[40px] w-[350px] rounded-2xl border-[1px] border-white/20 backdrop-blur-md placeholder-gray-200 focus:outline-none pl-[15px] text-white mt-[10px] ml-[73px]"
+            >
+              <p
+                class="task1Text h-9 scrollbar-hide pt-[6px] overflow-x-auto font-semibold"
+              >
+                <!-- This is My First Task  -->
+              </p>
+            </div>
+            <i
+              class="checkBtn1 fa-solid fa-check-double mt-[22px] text-[22px] ml-[20px] cursor-pointer"
+            ></i>
+            <i
+              class="deleteBtn1 fa-solid fa-trash-can mt-[22px] text-[22px] ml-[20px] text-red-500 cursor-pointer"
+            ></i>
+          </div>
+          <div class="taskLists2 flex text-white invisible">
+            <div
+              class="task2 bg-white/10 h-[40px] w-[350px] rounded-2xl border-[1px] border-white/20 backdrop-blur-md placeholder-gray-200 focus:outline-none pl-[15px] text-white mt-[10px] ml-[73px]"
+            >
+              <p
+                class="task2Text h-9 scrollbar-hide pt-[6px] overflow-x-auto font-semibold"
+              >
+                <!-- This is My First Task  -->
+              </p>
+            </div>
+            <i
+              class="checkBtn2 fa-solid fa-check-double mt-[22px] text-[22px] ml-[20px] cursor-pointer"
+            ></i>
+            <i
+              class="deleteBtn2 fa-solid fa-trash-can mt-[22px] text-[22px] ml-[20px] text-red-500 cursor-pointer"
+            ></i>
+          </div>
+          <div class="taskLists3 flex text-white invisible">
+            <div
+              class="task3 bg-white/10 h-[40px] w-[350px] rounded-2xl border-[1px] border-white/20 backdrop-blur-md placeholder-gray-200 focus:outline-none pl-[15px] text-white mt-[10px] ml-[73px]"
+            >
+              <p
+                class="task3Text h-9 scrollbar-hide pt-[6px] overflow-x-auto font-semibold"
+              >
+                <!-- This is My First Task  -->
+              </p>
+            </div>
+            <i
+              class="checkBtn3 fa-solid fa-check-double mt-[22px] text-[22px] ml-[20px] cursor-pointer"
+            ></i>
+            <i
+              class="deleteBtn3 fa-solid fa-trash-can mt-[22px] text-[22px] ml-[20px] text-red-500 cursor-pointer"
+            ></i>
+          </div>
+          <div class="taskLists4 flex text-white invisible">
+            <div
+              class="task4 bg-white/10 h-[40px] w-[350px] rounded-2xl border-[1px] border-white/20 backdrop-blur-md placeholder-gray-200 focus:outline-none pl-[15px] text-white mt-[10px] ml-[73px]"
+            >
+              <p
+                class="task4Text h-9 scrollbar-hide pt-[6px] overflow-x-auto font-semibold"
+              >
+                <!-- This is My First Task  -->
+              </p>
+            </div>
+            <i
+              class="checkBtn4 fa-solid fa-check-double mt-[22px] text-[22px] ml-[20px] cursor-pointer"
+            ></i>
+            <i
+              class="deleteBtn4 fa-solid fa-trash-can mt-[22px] text-[22px] ml-[20px] text-red-500 cursor-pointer"
+            ></i>
+          </div>
+          <div class="taskLists5 flex text-white invisible">
+            <div
+              class="task5 bg-white/10 h-[40px] w-[350px] rounded-2xl border-[1px] border-white/20 backdrop-blur-md placeholder-gray-200 focus:outline-none pl-[15px] text-white mt-[10px] ml-[73px]"
+            >
+              <p
+                class="task5Text h-9 scrollbar-hide pt-[6px] overflow-x-auto font-semibold"
+              >
+                <!-- This is My 5th Task  -->
+              </p>
+            </div>
+            <i
+              class="checkBtn5 fa-solid fa-check-double mt-[22px] text-[22px] ml-[20px] cursor-pointer"
+            ></i>
+            <i
+              class="deleteBtn5 fa-solid fa-trash-can mt-[22px] text-[22px] ml-[20px] text-red-500 cursor-pointer"
+            ></i>
+          </div>
+        </div>
+        <!-- Clock Section -->
+        <div class="clockQuote w-[20%] h-[400px] ml-[3%] mt-[2%]">
+          <div
+            class="w-[80%] h-[150px] border-[1px] border-white mt-[1%] text-white text-[30px] bg-white/10 backdrop-blur-md border-white/20 rounded-[30%]"
+            style="font-family: 'Orbitron', sans-serif"
+          >
+            <h1
+              class="clock mt-[28%] ml-[10%] transform scale-y-280 text-center]"
+            >
+              12:30:56
+            </h1>
+          </div>
+          <div
+            class="Quote w-[80%] h-[225px] border-[1px] border-white/20 bg-white/10 rounded-2xl backdrop-blur-md mt-[5%] text-white text-center text-[28px]"
+            style="font-family: 'Dancing Script', cursive"
+          >
+            <h3 class="mt-[7px]">"If you</h3>
+            <h1 class="font-bold">BELIEVE</h1>
+            <h3>in yourself</h3>
+            <h1 class="font-bold">ANYTHING</h1>
+            <h3>is possible"</h3>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="text-white text-[15px] text-center font-light mt-[0px]">
+      Made with <i class="fa-solid fa-heart"></i> By Muhammad Uzair Asif
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
